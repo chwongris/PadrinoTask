@@ -3,6 +3,10 @@
 <% form_tag url_for(:tasks, :index) do %>
 <%= label_tag :title %>
 <%= text_field_tag :title %>
+<%= label_tag :Description %>
+<%= text_field_tag :Description %>
+<%= label_tag :priority %>
+<%= text_field_tag :priority %>
 <%= submit_tag %>
 <% end %>
 

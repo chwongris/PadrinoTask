@@ -7,7 +7,7 @@ TaskAssignment::App.controllers :tasks do
   end
 
   post :index do
-    @tasks = Task.new(:title => params[:title])
+    @tasks = Task.new(:title => params[:title], :Description => params[:Description], :priority => params[:priority])
     @tasks.save
     redirect "/tasks/show/#{@tasks.id}"
   end
