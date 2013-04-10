@@ -2,7 +2,7 @@ TaskAssignment::App.controllers :tasks do
   
   
   get :index do
-    @tasks = Task.all
+    @tasks = Task.order("priority").all
     render '/tasks/index'
   end
 

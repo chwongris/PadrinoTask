@@ -2,7 +2,7 @@
 
 <% @tasks.each do |p| %>
 <%= p.title %> 
-<%= p.description %> 
+<%= p.Description %> 
 <%= p.priority %> 
 <%= link_to 'edit', url_for(:tasks, :edit, :id => p.id) %>
 <%= button_to 'delete', url(:tasks, :index, :id => p.id), :method => 'DELETE' %>
