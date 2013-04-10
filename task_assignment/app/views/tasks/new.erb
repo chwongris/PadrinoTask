@@ -1,0 +1,9 @@
+<h3>Create new task</h3>
+
+<% form_tag url_for(:tasks, :index) do %>
+<%= label_tag :title %>
+<%= text_field_tag :title %>
+<%= submit_tag %>
+<% end %>
+
+<%= link_to 'All Tasks', url_for(:tasks, :index) %>
